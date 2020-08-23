@@ -1,4 +1,16 @@
-body {
-    background-color: blue;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
+body {
+    background-color: white;
+}
+
+.container{
+background-color: rgb(143, 200, 214);
+height: 150px;
+width: 200px;
+margin: 120px auto;
+}
