@@ -1,16 +1,23 @@
-let today = new Date();
+// let timeOfDay = amAndPm;
 
-const time = 
-today.getHours() + ':' + 
-today.getMinutes() + ':'+
-today.getSeconds();
-;
-
-let showTime = document.querySelectorAll('span');
-
-for(let span of showTime) {
-    span.innerHTML = `${time}`;
-}
-
-
-
+function timeRightNow (){ 
+    let today = new Date();
+    let hour = today.getHours("#hours");
+    let minute = today.getMinutes("#minutes");
+    let second = today.getSeconds("#seconds");
+    let amAndPm = (hour >= 12) ? "PM" : "AM";
+    
+    document.querySelector('#hours').innerHTML = hour; 
+    document.querySelector('#minutes').innerHTML = ":"+minute+":"
+    document.querySelector("#seconds").innerHTML = second += amAndPm
+     
+    }
+    
+     
+    
+    
+    timeRightNow();
+    
+    setInterval(timeRightNow, 100);
+    
+    
